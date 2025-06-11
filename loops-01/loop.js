@@ -1,7 +1,7 @@
 // Create a hello world function where it should print for 20 times along with its each count.
 
-function helloWorld(n, num) {
-  num = 0;
+function helloWorld(n) {
+  let num = 0;
   for (let i = 0; i < n; i++) {
     num = num + 1;
     console.log("Hello World", num);
@@ -9,6 +9,8 @@ function helloWorld(n, num) {
 }
 
 helloWorld(20);
+
+// Guess the output
 
 function newLoop() {
   for (let i = 3; i < 5; i++) {
@@ -27,3 +29,16 @@ function xyz() {
 }
 
 xyz();
+
+// Print all the elements in the array
+let arr = [10, 6, 2, 0, 8, 3, 80];
+
+function printArr(n) {
+  let length = arr.length;
+  for (let i = 0; i < length; i++) {
+    let arrItems = n[i];
+    console.log(arrItems);
+  }
+}
+
+printArr(arr);
