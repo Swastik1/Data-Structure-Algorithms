@@ -26,9 +26,12 @@ function secondLargestNumber(arr) {
 console.log(secondLargestNumber(arr));
 
 // psuedo code
-// -> assume the current index as largest
-// -> compare with rest elements in the array
-// -> if the current index > largest then update largest
-// -> assume the second index as second largest
-// -> compare the largest with rest elements in the array
-// -> if the substraction count of largest with any element is highest then update the secondLargest
+// Check for corner cases -> if array length is less than 2, if array has duplicates, if array has -ve elements
+// -> Maintain two values firstLargest and secondLargest as -Infinity
+// -> Check if the current index is > than firstLargest
+// -> Then the older value of firstLargest becomes the secondLargest
+// -> Update secondLargest as firstLargest
+// -> Update firstLargest as the current index
+// -> if the current index is not > than firstLargest , check if the current index is > than second largest
+// -> if so - Update secondLargest as the current index
+// -> return secondLargest
